@@ -49,4 +49,8 @@ chmod +x "$DESKTOP_FILE"
 # Optionally reload .bashrc (or the relevant shell config)
 source "$HOME/.bashrc"
 
+# Refresh the desktop files
+echo "Refreshing desktop database..."
+update-desktop-database "$HOME/.local/share/applications"
+
 echo "Telegram installed locally at $INSTALL_DIR. You can run it with 'telegram' or find it in your applications menu."
